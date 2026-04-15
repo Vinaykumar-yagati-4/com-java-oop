@@ -2,7 +2,8 @@ package com.java.oop;
 
 public class Main {
     static void main(String[] args) {
-        //local variable
+        //local variable\
+        Customer customer = new Customer();
         Product product = new Product(); // Product -> class name,  product -> reference variable
         product.id = 1;
         product.name = "realme TechLife 80 cm (32 inch) QLED HD Ready Smart Google TV (32HDGQRDDAQ)";
@@ -46,5 +47,35 @@ public class Main {
         System.out.println("reviews count :" +product1.reviewsCount);
         System.out.println("company :" +product1.company);
         System.out.println("category :" +product1.category);
+
+        customer.id = 3;
+        customer.name = "tarun";
+        customer.email = "tarun@gmail.com";
+        customer.age = 24;
+        customer.gender = 'M';
+        customer.mobileNumber = 9305672459L;
+        System.out.println("id :" +customer.id);
+        System.out.println("name :" +customer.name);
+        System.out.println("email :" +customer.email);
+        System.out.println("age :" +customer.age);
+        System.out.println("gender :" +customer.email);
+        System.out.println("mobile number :" +customer.mobileNumber);
+
+        Customer customer2 = new Customer();
+        customer2.id = 4;
+        customer2.name = "anil";
+        customer2.email = "anil@gmail.com";
+        customer2.age = 22;
+        customer2.gender = 'M';
+        customer2.mobileNumber = 9308864445L;
+        System.out.println("id :" + customer2.id);
+        System.out.println("name :" + customer2.name);
+        System.out.println("email :" + customer2.email);
+        System.out.println("age :" + customer2.age);
+        System.out.println("gender :" + customer2.email);
+        System.out.println("mobile number :" + customer2.mobileNumber);
+
+
     }
 }
+

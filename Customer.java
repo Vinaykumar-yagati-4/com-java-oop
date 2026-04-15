@@ -4,7 +4,7 @@ public class Customer {
     int id;
     byte age;
     char gender;
-    int name;
+    String name;
     String email;
     long mobileNumber;
 
