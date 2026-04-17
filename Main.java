@@ -3,6 +3,7 @@ package com.java.oop;
 public class Main {
     static void main(String[] args) {
         //local variable\
+        Order order = new Order();
         Customer customer = new Customer();
         Product product = new Product(); // Product -> class name,  product -> reference variable
         product.id = 1;
@@ -27,6 +28,7 @@ public class Main {
         System.out.println("category :" +product.category);
         System.out.println("Display size :" +product.displaySize);
         System.out.println("manufactured Year :" +product.manufacturedYear);
+        System.out.println("--------------------------------------");
 
         Product product1 = new Product();
         product1.id = 2;
@@ -47,6 +49,8 @@ public class Main {
         System.out.println("reviews count :" +product1.reviewsCount);
         System.out.println("company :" +product1.company);
         System.out.println("category :" +product1.category);
+        System.out.println("-----------------------------------");
+
 
         customer.id = 3;
         customer.name = "tarun";
@@ -60,6 +64,8 @@ public class Main {
         System.out.println("age :" +customer.age);
         System.out.println("gender :" +customer.email);
         System.out.println("mobile number :" +customer.mobileNumber);
+        System.out.println("---------------------------------------");
+
 
         Customer customer2 = new Customer();
         customer2.id = 4;
@@ -74,6 +80,7 @@ public class Main {
         System.out.println("age :" + customer2.age);
         System.out.println("gender :" + customer2.email);
         System.out.println("mobile number :" + customer2.mobileNumber);
+        System.out.println("--------------------------------");
 
 
         Customer customer3 = new Customer();
@@ -83,6 +90,7 @@ public class Main {
         System.out.println("age :" + customer3.age);
         System.out.println("gender :" + customer3.email);
         System.out.println("mobile number :" + customer3.mobileNumber);
+        System.out.println("---------------------------------");
 
 
         Customer customer5 = new Customer(111,(byte)25,'M',"dhoni","dhoni@gmail.com",7654321890L);
@@ -92,6 +100,7 @@ public class Main {
         System.out.println("age :" + customer5.age);
         System.out.println("gender :" + customer5.email);
         System.out.println("mobile number :" + customer5.mobileNumber);
+        System.out.println("--------------------------------");
 
 
 
@@ -102,6 +111,7 @@ public class Main {
         System.out.println("Is available :" +product2.isAvailable);
         System.out.println("company :" +product2.company);
         System.out.println("category :" +product2.category);
+        System.out.println("--------------------------");
 
 
 
@@ -112,9 +122,33 @@ public class Main {
         System.out.println("Is available :" +product4.isAvailable);
         System.out.println("company :" +product4.company);
         System.out.println("category :" +product4.category);
+        System.out.println("--------------------------------");
 
 
 
+    //Order details
+        Order order1 = new Order();
+        System.out.println("Order id :" +order1.orderId);
+        System.out.println("Order date :" +order1.orderDate);
+        System.out.println("Order Status  :" +order1.orderStatus);
+        System.out.println("Is cancellable :" +order1.isCancellable);
+        System.out.println("Is returnable :" +order1.isReturnable);
+        System.out.println("Tracking Id :" +order1.trackingId);
+        System.out.println("Delivery type :" +order1.deliveryType);
+        System.out.println("Estimated delivery date :" +order1.estimatedDeliveryDate);
+        System.out.println("----------------------------------------");
+
+
+        Order order2 = new Order(1001029876L,"21-4-2026","pending",true,false,190267549L,"standard","27-4-2026");
+        System.out.println("Order id :" +order2.orderId);
+        System.out.println("Order date :" +order2.orderDate);
+        System.out.println("Order Status  :" +order2.orderStatus);
+        System.out.println("Is cancellable :" +order2.isCancellable);
+        System.out.println("Is returnable :" +order2.isReturnable);
+        System.out.println("Tracking Id :" +order2.trackingId);
+        System.out.println("Delivery type :" +order2.deliveryType);
+        System.out.println("Estimated delivery date :" +order2.estimatedDeliveryDate);
+        System.out.println("----------------------------------------");
 
     }
 }
