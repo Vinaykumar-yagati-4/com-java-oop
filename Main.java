@@ -13,7 +13,7 @@ public class Main {
         product.isAvailable = true;
         product.reviewsCount = 26847;
         product.company = "realme ";
-        product.category = "Tv";
+        product.category =  "Tv";
         product.displaySize = 55;
         product.manufacturedYear = 2026;
         System.out.println("id :" +product.id);
@@ -74,6 +74,46 @@ public class Main {
         System.out.println("age :" + customer2.age);
         System.out.println("gender :" + customer2.email);
         System.out.println("mobile number :" + customer2.mobileNumber);
+
+
+        Customer customer3 = new Customer();
+        System.out.println("id :" + customer3.id);
+        System.out.println("name :" + customer3.name);
+        System.out.println("email :" + customer3.email);
+        System.out.println("age :" + customer3.age);
+        System.out.println("gender :" + customer3.email);
+        System.out.println("mobile number :" + customer3.mobileNumber);
+
+
+        Customer customer5 = new Customer(111,(byte)25,'M',"dhoni","dhoni@gmail.com",7654321890L);
+        System.out.println("id :" + customer5.id);
+        System.out.println("name :" + customer5.name);
+        System.out.println("email :" + customer5.email);
+        System.out.println("age :" + customer5.age);
+        System.out.println("gender :" + customer5.email);
+        System.out.println("mobile number :" + customer5.mobileNumber);
+
+
+
+        Product product2 = new Product();
+        System.out.println("id :" +product2.id);
+        System.out.println("name :" +product2.name);
+        System.out.println("Max Retail Price :" +product2.maxRetailPrice);
+        System.out.println("Is available :" +product2.isAvailable);
+        System.out.println("company :" +product2.company);
+        System.out.println("category :" +product2.category);
+
+
+
+        Product product4 = new Product(444,"dell",1000000,true,"laptop","dell");
+        System.out.println("id :" +product4.id);
+        System.out.println("name :" +product4.name);
+        System.out.println("Max Retail Price :" +product4.maxRetailPrice);
+        System.out.println("Is available :" +product4.isAvailable);
+        System.out.println("company :" +product4.company);
+        System.out.println("category :" +product4.category);
+
+
 
 
     }
