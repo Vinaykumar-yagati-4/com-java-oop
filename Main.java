@@ -150,6 +150,24 @@ public class Main {
         System.out.println("Estimated delivery date :" +order2.estimatedDeliveryDate);
         System.out.println("----------------------------------------");
 
+
+        //payment updated
+        Payment payment = new Payment();
+        System.out.println("Transaction id :" +payment.transactionId);
+        System.out.println("Amount :" +payment.amount);
+        System.out.println("Status :" +payment.status);
+        System.out.println("Payment mode :" +payment.paymentMode);
+        System.out.println("Is Payment Successful :" +payment.isPaymentSuccessful);
+        System.out.println("-------------------------------------");
+
+        Payment payment1 = new Payment("TX205678912",1500,"pending","card",false);
+        System.out.println("Transaction id :" +payment1.transactionId);
+        System.out.println("Amount :" +payment1.amount);
+        System.out.println("Status :" +payment1.status);
+        System.out.println("Payment mode :" +payment1.paymentMode);
+        System.out.println("Is payment Successful :" +payment1.isPaymentSuccessful);
+        System.out.println("-----------------------------");
+
     }
 }
 
