@@ -3,7 +3,6 @@ package com.java.oop;
 public class Main {
     static void main(String[] args) {
         //local variable\
-        Order order = new Order();
         Customer customer = new Customer();
         Product product = new Product(); // Product -> class name,  product -> reference variable
         product.id = 1;
@@ -168,6 +167,18 @@ public class Main {
         System.out.println("Is payment Successful :" +payment1.isPaymentSuccessful);
         System.out.println("-----------------------------");
 
+
+        Cart cart = new Cart();
+        System.out.println("Item Added :" +cart.addToCart);
+        System.out.println("Cart Updated :" +cart.updateCart);
+        System.out.println("Item deleted :" +cart.deleteItem);
+        System.out.println("----------------------------");
+
+        Cart cart1 = new Cart();
+        System.out.println("Item Added :" +cart1.addToCart);
+        System.out.println("Cart Updated :" +cart1.updateCart);
+        System.out.println("Item deleted :" +cart1.deleteItem);
+        System.out.println("----------------------------");
     }
 }
 
