@@ -21,5 +21,9 @@ public class PremiumCustomer extends Customer {
         System.out.println("shipping charges :" +shippingCharges);
         System.out.println("extra discount : +20%");
         System.out.println("final price :" +calculateFinalPrice(product));
+
+
+
+
+        }
     }
-}

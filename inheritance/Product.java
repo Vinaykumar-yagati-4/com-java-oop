@@ -2,13 +2,13 @@ package com.java.oop.inheritance;
 
 public class Product {
     int id;
-    String name;
-    int maxRetailPrice;
-    byte discountPercentage;
-    float ratings;
-    String company;
-    String category;
-    int reviewsCount;
+    public String name;
+    public int maxRetailPrice;
+    public byte discountPercentage;
+    public float ratings;
+    public String company;
+    public String category;
+    public int reviewsCount;
 
     public Product(int id, String name, int maxRetailPrice, byte discountPercentage, float ratings, String company, String category, int reviewsCount) {
         this.id = id;
@@ -21,7 +21,7 @@ public class Product {
         this.reviewsCount = reviewsCount;
 
     }
-    double getDiscountedPrice(){
+    public double getDiscountedPrice(){
         return  maxRetailPrice - (maxRetailPrice*discountPercentage / 100);
     }
 }

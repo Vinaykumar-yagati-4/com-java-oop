@@ -39,4 +39,7 @@ public class Customer {
         System.out.println("discount :" +product.discountPercentage);
         System.out.println("price after discount :" +product.getDiscountedPrice());
     }
-}
+
+
+    }
+

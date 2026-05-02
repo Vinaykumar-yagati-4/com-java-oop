@@ -15,11 +15,15 @@ public class RegularCustomer extends Customer{
     }
 
 
-    void display(Product product) {
+    public void displayDetails(Product product) {
         super.display(product);
         System.out.println("membership :" +membershipType);
         System.out.println("shipping charges :" +shippingCharges);
         System.out.println("final price :" +calculateFinalPrice(product));
+
+
+
+        }
     }
 }
 
