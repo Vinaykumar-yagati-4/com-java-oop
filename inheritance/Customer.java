@@ -1,6 +1,6 @@
 package com.java.oop.inheritance;
 
-public class Customer {
+public  class Customer {
     int id;
     String name;
     String email;
@@ -20,7 +20,7 @@ public class Customer {
     double calculateFinalPrice(Product product){
         return product.getDiscountedPrice();
     }
-    void displayCustomerDetails(){
+    public void displayDetails(){
         System.out.println("id :" +id);
         System.out.println("name :" +name);
         System.out.println("age :" +age);
@@ -28,8 +28,8 @@ public class Customer {
         System.out.println("gender :" +gender);
         System.out.println("mobile no :" +mobileNo);
     }
-    void display(Product product){
-        displayCustomerDetails();
+    public void displayDetails(Product product){
+        displayDetails();
         System.out.println("name :" +product.name);
         System.out.println("category :" +product.category);
         System.out.println("company :" +product.company);
@@ -41,5 +41,21 @@ public class Customer {
     }
 
 
+
+    public void displayDetails(String name){
+        System.out.println("Display customer details by name :" +name);
     }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", gender=" + gender +
+                ", age=" + age +
+                ", mobileNo=" + mobileNo +
+                '}';
+    }
+}
 
